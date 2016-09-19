@@ -1,8 +1,9 @@
 require 'sinatra'
 
-name = williams
+get '/hello/:name' do
 
-get '/:name' do |n|
+"Hello #{params['name']!}"
+=begin
 <<EOS
 <html>
 <head>
@@ -15,4 +16,5 @@ get '/:name' do |n|
 </body>
 </html>
 EOS
+=end
 end
