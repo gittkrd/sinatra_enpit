@@ -1,5 +1,9 @@
 require 'sinatra'
 
 get '/' do
-  "hello world! KH"
+<<EOS
+
+  "hello world, KH"
+
+EOS
 end
