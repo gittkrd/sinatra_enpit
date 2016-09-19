@@ -1,10 +1,10 @@
 require 'sinatra'
 
-get '/hello/:name' do
+get '/' do
+  erb :index
+end
 
-"Hello #{params['name']}!"
 =begin
->>>>>>> hello1
 <<EOS
 <html>
 <head>
@@ -17,5 +17,6 @@ get '/hello/:name' do
 </body>
 </html>
 EOS
-=end
 end
+=end
+
