@@ -2,7 +2,7 @@ require 'sinatra'
 
 get '/hello/:name' do
 
-"Hello #{params['name']!}"
+"Hello #{params['name']}!"
 =begin
 <<EOS
 <html>
