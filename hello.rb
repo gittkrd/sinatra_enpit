@@ -1,6 +1,6 @@
 require 'sinatra'
 
-get '/hello/:name' do
+get '/:name' do
 
 "Hello #{params['name']}!"
 =begin
