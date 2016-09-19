@@ -1,6 +1,6 @@
 require 'sinatra'
 
-get '/' do
+get '/:name' do |n|
 <<EOS
 <html>
 <head>
@@ -8,7 +8,7 @@ get '/' do
 </head>
 <body>
 
-  <h1>hello world, KH</h1>
+  <h1>hello world, "#{params['name']}"</h1>
 
 </body>
 </html>
