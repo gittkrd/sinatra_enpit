@@ -10,7 +10,7 @@ get '/:name' do |n|
 </head>
 <body>
 
-  <h1>hello world, "#{name}"</h1>
+  <h1>hello world, KH back</h1>
 
 </body>
 </html>
