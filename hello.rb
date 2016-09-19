@@ -1,8 +1,6 @@
 require 'sinatra'
 
-name = williams
-
-get '/:name' do |n|
+get '/' do 
 <<EOS
 <html>
 <head>
