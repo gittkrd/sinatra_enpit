@@ -1,6 +1,10 @@
 require 'sinatra'
 
-get '/' do 
+get '/hello/:name' do
+
+"Hello #{params['name']}!"
+=begin
+>>>>>>> hello1
 <<EOS
 <html>
 <head>
@@ -13,4 +17,5 @@ get '/' do
 </body>
 </html>
 EOS
+=end
 end
