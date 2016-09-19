@@ -1,5 +1,7 @@
 require 'sinatra'
 
+name = williams
+
 get '/:name' do |n|
 <<EOS
 <html>
@@ -8,7 +10,7 @@ get '/:name' do |n|
 </head>
 <body>
 
-  <h1>hello world, "#{params['name']}"</h1>
+  <h1>hello world, "#{name}"</h1>
 
 </body>
 </html>
