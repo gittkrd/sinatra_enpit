@@ -1,22 +1,14 @@
 require 'sinatra'
 
 get '/' do
+  @title = "main index" 
+  @content = "main content"
   erb :index
 end
 
-=begin
-<<EOS
-<html>
-<head>
-  <title> herokutest </title>
-</head>
-<body>
-
-  <h1>hello world, KH back</h1>
-
-</body>
-</html>
-EOS
+get '/about' do 
+  @title = "about this page" 
+  @content = "this page is ..."
+  @mail = "xxx@gmail.com"
+  erb :about
 end
-=end
-

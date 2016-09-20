@@ -1,0 +1,13 @@
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title><%= @title%></title>
+</head>
+<!-- viewsフォルダにlayout.erbがあると最初に読み込む。
+これに共通部分を書き込む（htmlタグ、headタグとか
+異なる部分はyieldで指定する
+それぞれのファイルindex.erbとかには、異なる部分のみ書き込めばよくなる。      -->
+<body>
+  <%= yield %>
+</body>
+</html>
